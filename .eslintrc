@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "jest",
+    "ramda",
+    "prettier",
+    "sonarjs"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "plugin:ramda/recommended",
+    "plugin:prettier/recommended",
+    "plugin:sonarjs/recommended"
+  ],
+  "env": {
+    "jest": true,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": "babel-plugin-root-import"
+  },
+  "rules": {
+    "max-len": [
+      "error", {
+        "code": 120,
+        "ignoreRegExpLiterals": true,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "no-console": "off",
+    "no-plusplus": "off",
+    "prettier/prettier": "error"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "rootDir": "../../",
+  "testMatch": ["**/__tests__/**/*.(spec|test).js?(x)"],
+  "setupFilesAfterEnv": ["<rootDir>/config/jest/setupTests.js"],
+  "collectCoverage": false,
+  "coverageReporters": ["text", "html"]
+}

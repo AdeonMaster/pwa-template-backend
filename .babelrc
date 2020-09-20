@@ -1,0 +1,23 @@
+{
+  "presets" : [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    [
+      "babel-plugin-root-import", {
+        "rootPathPrefix": "~",
+        "rootPathSuffix": "src"
+      }
+    ],
+    [
+      "transform-imports", {
+        "ramda": {
+          "transform": "ramda/src/${member}",
+          "preventFullImport": true
+        }
+      }
+    ]
+  ]
+}
